@@ -25,45 +25,47 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellIdentifier" rowHeight="100" id="1fN-4B-ul6" customClass="CustomCell" customModule="CustomTableViewExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellIdentifier" rowHeight="100" id="Tjm-5C-oPi" customClass="CustomCell" customModule="CustomTableViewExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1fN-4B-ul6" id="ou9-I3-D6I" customClass="CustomCell" customModule="CustomTableViewExample" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tjm-5C-oPi" id="SqT-gf-6BB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FV7-gH-ibo">
-                                                    <rect key="frame" x="110" y="39.5" width="245" height="21"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6i-ww-XRt">
+                                                    <rect key="frame" x="20" y="10" width="80" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="ih6-W1-yIJ"/>
+                                                        <constraint firstAttribute="width" constant="80" id="Wz6-nz-TlI"/>
+                                                        <constraint firstAttribute="height" constant="80" id="gof-Wb-QIa"/>
                                                     </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-yO-bKk">
+                                                    <rect key="frame" x="110" y="39.5" width="245" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3D6-VN-fC3">
-                                                    <rect key="frame" x="20" y="10" width="80" height="80"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="anz-PN-1Bh"/>
-                                                        <constraint firstAttribute="width" constant="80" id="dka-yc-YXS"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="3D6-VN-fC3" firstAttribute="leading" secondItem="ou9-I3-D6I" secondAttribute="leading" constant="20" id="0Hy-0L-tmz"/>
-                                                <constraint firstItem="3D6-VN-fC3" firstAttribute="centerY" secondItem="ou9-I3-D6I" secondAttribute="centerY" id="2wf-vB-o82"/>
-                                                <constraint firstAttribute="trailing" secondItem="FV7-gH-ibo" secondAttribute="trailing" constant="20" id="XtT-Ge-71M"/>
-                                                <constraint firstItem="FV7-gH-ibo" firstAttribute="leading" secondItem="3D6-VN-fC3" secondAttribute="trailing" constant="10" id="xx9-uK-eJS"/>
-                                                <constraint firstItem="FV7-gH-ibo" firstAttribute="centerY" secondItem="ou9-I3-D6I" secondAttribute="centerY" id="yaC-EM-uh7"/>
+                                                <constraint firstItem="9Nl-yO-bKk" firstAttribute="leading" secondItem="p6i-ww-XRt" secondAttribute="trailing" constant="10" id="5jL-jI-qx6"/>
+                                                <constraint firstItem="p6i-ww-XRt" firstAttribute="leading" secondItem="SqT-gf-6BB" secondAttribute="leading" constant="20" id="QJM-PF-opC"/>
+                                                <constraint firstItem="p6i-ww-XRt" firstAttribute="centerY" secondItem="SqT-gf-6BB" secondAttribute="centerY" id="a4A-xB-rWa"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Nl-yO-bKk" secondAttribute="trailing" constant="20" id="aFi-ox-r6s"/>
+                                                <constraint firstItem="9Nl-yO-bKk" firstAttribute="centerY" secondItem="SqT-gf-6BB" secondAttribute="centerY" id="nvp-J7-NnG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="cellImage" destination="3D6-VN-fC3" id="lYX-Iw-WTJ"/>
-                                            <outlet property="cellLabel" destination="FV7-gH-ibo" id="7Kq-6L-0WN"/>
+                                            <outlet property="cellImage" destination="p6i-ww-XRt" id="s2n-bl-xhn"/>
+                                            <outlet property="cellLabel" destination="9Nl-yO-bKk" id="Kmr-mp-erU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fCS-Cw-zhF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ft8-e5-gzU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,12 +82,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="dJJ-5U-eEW" id="saH-jB-Jjj"/>
+                        <outlet property="tableView" destination="dJJ-5U-eEW" id="Vw1-28-l2I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="100"/>
+            <point key="canvasLocation" x="157.59999999999999" y="99.400299850074973"/>
         </scene>
         <!--Data Presenting View Controller-->
         <scene sceneID="p13-3d-e7W">

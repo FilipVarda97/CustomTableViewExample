@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CustomCell:UITableViewCell {
+class CustomCell: UITableViewCell {
     
     @IBOutlet weak var cellLabel:UILabel!
     @IBOutlet weak var cellImage:UIImageView!

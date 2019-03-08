@@ -18,8 +18,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         arrayOfItems = APIClient().getData()
         tableView.reloadData()
-        tableView.delegate = self
-        tableView.dataSource = self
     }
 }
 
